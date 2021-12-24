@@ -1,0 +1,36 @@
+a {color:#fff;}
+.head {position:fixed;top:0;left:50%;width:50%;padding:30px;height:auto;font-size:12px;}
+.head .logo	 {display:none;}
+.head li {padding:0 0 3px;display:block;}
+
+.main {min-height:200px;padding:0;height:100vh;}
+
+.faces 				{position:fixed;top:0;left:0;width:50%;height:100%;overflow:hidden;}
+.faces div 		{float:left;width:20%;height:20%;}
+.faces img  		{width:100%;height:100%;}
+
+.greeting 		{position:fixed;top:0;left:50%;width:50%;height:100%;text-align:left;overflow:hidden;}
+.greeting h1 	{padding:20% 7% 20px;font-size:38px;font-family: 'Shadows Into Light Two', cursive;text-shadow:0 1px 1px rgba(0,0,0,.5);}
+
+.foot 		{position:fixed;bottom:0;left:50%;width:50%;padding:30px 30px 15px 3.5%;}
+.foot p		{float:left;color:#fff;}
+
+.contact {display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;background:#fff;padding:40px 10%;}
+
+
+@media screen and (max-width: 800px) {
+	.main	{padding:0;}
+	.faces,.greeting,.foot,.head,.main {position:static;float:left;width:100%;}	
+	.head 			{font-size: 14px;}
+	.head .main-nav li a {padding: 15px 20px !important;}
+	.greeting h1 {padding:80px;}
+	.foot p, 		
+	.foot p a 		{color:#505050;}
+	
+	.head			{padding:10px 0 0;}
+	.head .logo	 {display:inline-block;}
+}
+
+@media screen and (max-width: 650px) {
+	.greeting h1 {font-size:30px;padding:50px;}
+}
