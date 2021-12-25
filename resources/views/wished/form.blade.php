@@ -35,7 +35,7 @@
                     </p>
                 @endif
                 <label for="image">Photo *</label>
-                <input type="file" id="image" name="image"/>
+                <input type="file" id="image" name="image" required/>
             </div>
             <div class="f-row">
                 <label for="comments">Texte souhait *</label>

@@ -41,7 +41,7 @@ class WishedController extends Controller
 
         $data = $request->validate([
             'name' => 'required|string',
-            'content' => 'required|string',
+            'content' => 'required|string|max:100',
             'image' => 'image|mimes:jpeg,png,jpg',
 
 
