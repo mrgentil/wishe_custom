@@ -52,7 +52,7 @@
                 <main class="main">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4 offset-lg-4">
+                            <div class="col-12 col-lg-4 offset-lg-4">
                                 <div class="greeting text">
                                     <div class="contact" style="color: white">
                                         <div class="wrap">
