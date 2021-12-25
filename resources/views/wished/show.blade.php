@@ -15,6 +15,8 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('fa/css/all.min.css') }}">
     <style>
         .wrapper {
             background: url({{ asset('images/bgr/bg-main.jpeg') }}) no-repeat fixed;
@@ -57,14 +59,12 @@
                                 <div class="greeting text">
                                     <div class="contact" style="color: white">
                                         <div class="wrap">
-                                            <h2>{{ $wished->name }}</h2>
+                                            <h2 style="color: #ff7900;font-weight: bold;text-align: center">{{ $wished->name }}</h2>
                                             <p>
                                                 <img src="{{ asset('images/image/lg/' . $wished->image) }}"
                                                      class="img-fluid" alt="">
                                             </p>
-                                            <p class="text-white">{!! $wished->content !!}</p>
-
-
+                                            <p class="text-white" style="font-family: 'Imperial Script', cursive;    font-size: 3.2em;color: #fff;text-align: left;line-height: 30px;">{!! $wished->content !!}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@
                         <ul>
                             <li>
                                 <a href="#" title="" style="background: #ff7900">
-                                    <span class="tw-icon-dropbox"></span>
+                                    <span class="fas fa-download"></span>
                                 </a>
                             </li>
                         </ul>
