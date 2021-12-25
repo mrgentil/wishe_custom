@@ -39,6 +39,9 @@
             opacity: .3;
             z-index: -1;
         }
+        .social-nav ul{
+            padding-left: 0!important;
+        }
     </style>
 </head>
 <body>
@@ -64,7 +67,7 @@
                                                 <img src="{{ asset('images/image/lg/' . $wished->image) }}"
                                                      class="img-fluid" alt="">
                                             </p>
-                                            <p class="text-white" style="font-family: 'Imperial Script', cursive;    font-size: 3.2em;color: #fff;text-align: left;line-height: 30px;">{!! $wished->content !!}</p>
+                                            <p class="text-white" style="font-family: 'Imperial Script', cursive;    font-size: 3.2em;color: #fff;text-align: center;line-height: 30px;">{!! $wished->content !!}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -73,10 +76,7 @@
                     </div>
                     <nav class="social-nav red left">
                         <ul>
-                            <li><a href="#" title="" style="background: #ff7900"><span class="tw-icon-facebook"></span></a>
-                            </li>
-                            <li><a href="#" title="" style="background: #ff7900"><span class="tw-icon-instagram"></span></a>
-                            </li>
+                            {!! $links !!}
                         </ul>
                     </nav>
                     <nav class="social-nav red right">

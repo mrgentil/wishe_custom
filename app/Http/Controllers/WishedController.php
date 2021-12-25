@@ -87,9 +87,16 @@ class WishedController extends Controller
      */
     public function show($id)
     {
+
+        $wished= Wished::findOrFail($id);
+
+        $links = \Share::page(\request()->url(), $wished->name, [])
+            ->facebook()
+            ->whatsapp();
         //
         return view('wished.show', [
-            'wished' => Wished::findOrFail($id)
+            'wished' => $wished,
+            'links' => $links
         ]);
     }
 

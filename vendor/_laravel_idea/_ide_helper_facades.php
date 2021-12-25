@@ -2508,6 +2508,7 @@ namespace {
     class Eloquent extends Illuminate\Database\Eloquent\Model {}
     class Event extends Illuminate\Support\Facades\Event {}
     class File extends Illuminate\Support\Facades\File {}
+    class Flare extends Facade\Ignition\Facades\Flare {}
     class Gate extends Illuminate\Support\Facades\Gate {}
     class Hash extends Illuminate\Support\Facades\Hash {}
     class Http extends Illuminate\Support\Facades\Http {}
@@ -2526,6 +2527,7 @@ namespace {
     class Route extends Illuminate\Support\Facades\Route {}
     class Schema extends Illuminate\Support\Facades\Schema {}
     class Session extends Illuminate\Support\Facades\Session {}
+    class Share extends Jorenvh\Share\ShareFacade {}
     class Storage extends Illuminate\Support\Facades\Storage {}
     class Str extends Illuminate\Support\Str {}
     class URL extends Illuminate\Support\Facades\URL {}
