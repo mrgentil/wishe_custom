@@ -64,15 +64,15 @@ class WishedController extends Controller
 
 
 
-
         $filename = $this->move($request->file('image'));
+
         try {
             $data['image'] = $filename;
             $data['order'] = $order;
             $data['matrix'] = $matrix;
             $wished = Wished::create($data);
             $wished->id;
-            Alert::success('Félicitations', 'Carte créee avec succès');
+            Alert::success('Félicitations', 'Carte créée avec succès');
             return redirect()->route('wishes.show', $wished);
         } catch (\Throwable $th) {
             throw $th;
